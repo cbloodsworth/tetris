@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b84af873-39cd-43fe-aaf9-5437be8ffdde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tetro_Straight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tetromino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tetris.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GridBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tetro_Straight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tetro_Straight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tetromino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tetromino.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681575054422</updated>
-      <workItem from="1681575055539" duration="6383000" />
+      <workItem from="1681575055539" duration="14766000" />
     </task>
     <servers />
   </component>
