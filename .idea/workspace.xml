@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b84af873-39cd-43fe-aaf9-5437be8ffdde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GridBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tetro_Straight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tetro_Straight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tetromino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tetromino.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +42,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681575054422</updated>
       <workItem from="1681575055539" duration="14766000" />
+      <workItem from="1681853932082" duration="611000" />
     </task>
     <servers />
   </component>

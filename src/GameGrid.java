@@ -50,6 +50,18 @@ public class GameGrid {
                         [i + current.getCurrentDistanceFallen()]
                         [j + (GRID_WIDTH-C)/2 + current.getOffset()];
 
+                GridBlock prevBlock;
+                if (current.getCurrentDistanceFallen() != 0) {
+                    prevBlock = gridMatrix
+                            [i + current.getCurrentDistanceFallen()-1]
+                            [j + (GRID_WIDTH-C)/2 + current.getOffset()];
+                }
+                else prevBlock = currBlock;
+
+                prevBlock.setVisible(false);
+                prevBlock.setFalling(false);
+                prevBlock.setColor(DrawGame.BACKGROUND_COLOR);
+
                 currBlock.setVisible(true);
                 currBlock.setFalling(true);
                 currBlock.setColor(current.getColor());
