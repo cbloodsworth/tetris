@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Tetro_Straight implements Tetromino {
+public class Tetro_L implements Tetromino {
     GridBlock[][] tetro_grid = new GridBlock[4][4];
     int[][] binary_tetro_grid = new int[4][4];
 
@@ -10,14 +10,14 @@ public class Tetro_Straight implements Tetromino {
     Color color;
 
 
-    public Tetro_Straight() {
+    public Tetro_L() {
         binary_tetro_grid = new int[][] {
-                {1,1,1,1},
-                {0,0,0,0},
+                {0,1,1,1},
+                {0,1,0,0},
                 {0,0,0,0},
                 {0,0,0,0}
         };
-        color = Color.CYAN;
+        color = Color.GREEN;
         tetro_grid = Tetromino.initializeTetroGrid(binary_tetro_grid, color);
         currDistFallen = 0;
         offset = 0;
