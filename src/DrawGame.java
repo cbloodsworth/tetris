@@ -6,7 +6,7 @@ import javax.swing.*;
 public class DrawGame extends JComponent implements ActionListener{
     private final int width;
     private final int height;
-    private final int BLOCK_SIZE = 64; // Pixels per side of individual blocks in the grid
+    private final int BLOCK_SIZE = 32; // Pixels per side of individual blocks in the grid
     private final GameGrid gameGrid;
 
     // COLOR CONSTANTS
@@ -30,15 +30,6 @@ public class DrawGame extends JComponent implements ActionListener{
         for (int i = 0; i < GameGrid.GRID_HEIGHT; i++) {
             for (int j = 0; j < GameGrid.GRID_WIDTH; j++) {
                 displayBlock(g2d, GameGrid.gridMatrix[i][j]);
-            }
-        }
-    }
-
-    private void displayFallingTetromino(Graphics2D g2d, Tetromino tetromino) {
-        // TODO: Later on, we can optimize this by simply calling from a map
-        for (int i = 0; i < tetromino.getTetroGrid().length; i++) {
-            for (int j = 0; j < tetromino.getTetroGrid()[0].length; j++) {
-                if (tetromino.getBinaryTetroGrid()[i][j] != 0) displayBlock(g2d, tetromino.getTetroGrid()[i][j]);
             }
         }
     }

@@ -37,7 +37,7 @@ public class GameGrid {
 //        switch(roll) {
 //
 //        }
-        current = new Tetro_Straight();
+        current = new Tetro_L();
     }
 
     public static void reloadTetromino(boolean display) {
