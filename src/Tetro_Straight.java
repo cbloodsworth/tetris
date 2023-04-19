@@ -51,6 +51,11 @@ public class Tetro_Straight implements Tetromino {
     }
 
     @Override
+    public void setOffset(boolean left) {
+        offset += left?-1:1;
+    }
+
+    @Override
     public void gradualFall() {
         currDistFallen++;
     }

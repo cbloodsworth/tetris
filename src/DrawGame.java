@@ -1,10 +1,9 @@
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.awt.geom.*;
 import javax.swing.*;
 
-public class DrawGame extends JComponent implements ActionListener {
+public class DrawGame extends JComponent implements ActionListener{
     private final int width;
     private final int height;
     private final int BLOCK_SIZE = 64; // Pixels per side of individual blocks in the grid
@@ -56,6 +55,23 @@ public class DrawGame extends JComponent implements ActionListener {
         g2d.fill(block);
     }
 
+    private class TAdapter extends KeyAdapter {
+        @Override
+        public void keyTyped(KeyEvent e) {
+            System.out.println("Hello");
+        }
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+            System.out.println("pRessed?");
+            Input.moveTetromino(e);
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            System.out.println("pressed.");
+        }
+    }
     /**
      * This gets called implicitly, java takes care of the rest
      * The graphics object gets passed in automatically as well, we don't have to make that
@@ -75,4 +91,6 @@ public class DrawGame extends JComponent implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         repaint();
     }
+
+
 }

@@ -8,6 +8,7 @@ public interface Tetromino {
 
     int getCurrentDistanceFallen();
     int getOffset();
+    void setOffset(boolean left);
 
     void gradualFall();
 

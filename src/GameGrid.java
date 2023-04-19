@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class GameGrid {
     static final int GRID_HEIGHT = 20;
     static final int GRID_WIDTH = 10;
-    static final int FALL_SPEED = 1200; // In milliseconds
+    static int FALL_SPEED = 1000; // In milliseconds
     // Color scheme constants
 
     public static GridBlock[][] gridMatrix = new GridBlock[GRID_HEIGHT][GRID_WIDTH];
@@ -27,7 +27,7 @@ public class GameGrid {
         Timer timer = new Timer(FALL_SPEED, taskPerformer);
         timer.start();
         spawnTetromino(); // TODO: MOVE THIS LINE LATER
-        reloadTetromino();
+        reloadTetromino(true);
     }
     public GridBlock[][] getGridMatrix() {
         return gridMatrix;
@@ -39,7 +39,8 @@ public class GameGrid {
 //        }
         current = new Tetro_Straight();
     }
-    public static void reloadTetromino() {
+
+    public static void reloadTetromino(boolean display) {
         // Iterate through the tetromino matrix
         int R = current.getTetroGrid().length;
         int C = current.getTetroGrid()[0].length;
@@ -50,15 +51,16 @@ public class GameGrid {
                         [i + current.getCurrentDistanceFallen()]
                         [j + (GRID_WIDTH-C)/2 + current.getOffset()];
 
-                currBlock.setVisible(true);
-                currBlock.setFalling(true);
-                currBlock.setColor(current.getColor());
+                currBlock.setVisible(display);
+                currBlock.setFalling(display);
+                currBlock.setColor(display?current.getColor():DrawGame.BACKGROUND_COLOR);
             }
         }
     }
     public static void gradualFallTetromino() {
+        reloadTetromino(false);
         current.gradualFall();
-        reloadTetromino();
+        reloadTetromino(true);
     }
     public static Tetromino getCurrentTetromino() {
         return current;
